@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://vjs.zencdn.net/7.7.5/video-js.css" rel="stylesheet" />
     <title>Video Fast Playback - Study</title>
 </head>
 <body>
     <h1>An awesome video</h1>
+    <video
+        id="my-video"
+        class="video-js"
+        controls
+        preload="auto"
+        width="640"
+        height="264"
+        data-setup="{}"
+    >
+        <source src="https://takatostorage.blob.core.windows.net/files/Bring%20Me%20The%20Horizon%20-%20Drown%20(Live)%20_%20Vevo%20Live%20Performance.mp4" type="video/mp4" />
+        <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a
+            web browser that
+            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+        </p>
+    </video>
+        <section>
+        <strong id="seconds">0</strong>
+        <small>seconds of video ready to play</small>
+    </section>
 </body>
+<script>
+const source = "https://takatostorage.blob.core.windows.net/files/Bring%20Me%20The%20Horizon%20-%20Drown%20(Live)%20_%20Vevo%20Live%20Performance.mp4";
+</script>
+<script src="https://vjs.zencdn.net/7.7.5/video.js"></script>
 </html>
